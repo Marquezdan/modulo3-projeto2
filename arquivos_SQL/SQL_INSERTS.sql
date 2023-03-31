@@ -1,16 +1,20 @@
  --INSERTS
+ 
+--Inserts do ID, nome das empresas e seus atributos na tabela correspondente.
 INSERT  INTO tb_empresa VALUES
 (1,'SENAC',' R. Carlos Matos, 86 - Centro, Nova Iguaçu - RJ'),
 (2,'ABC CURSOS',  'Avenida São Paulo, 16 - Centro, RJ'),
 (3,'QWERTY', ' Rua Jorge, 23 - Cordorvil, RJ'),
 (4,'JP TEC', ' Avenida Portugal, 12 - Belford Roxo, RJ');
 
+--inserts do ID da tabela,nome das tecnologias e das áreas.
 INSERT INTO tb_tecnologias VALUES
 (1,'Python','Dados'),
 (2,'JavaScript','Web DEV'),
 (3,'PowerBI', 'Business Inteligence'),
 (4,'UNIX', 'Game DEV');
 
+--Inserts do ID dos relatórios, o ID da empresa correspondente e a data que foi registrada.
 INSERT INTO tb_relatorios (id_relatorios, id_empresa, data_comp) VALUES
 (1, 1, '2023-02-23'),
 (2, 2, '2023-02-23'),
@@ -21,6 +25,7 @@ INSERT INTO tb_relatorios (id_relatorios, id_empresa, data_comp) VALUES
 (7, 3, '2023-08-01'),
 (8, 4, '2023-08-01');
 
+--Inserts da relação entre tecnologias e relatórios.
 INSERT INTO relatorios_tecnologias (id_tecnologias, id_relatorios ) VALUES
 (1, 1),
 (2, 1),
